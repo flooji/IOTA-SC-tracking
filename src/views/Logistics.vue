@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="wrapper">
-            <h1>Welcome, register a freight:</h1>
+            <h3>Welcome, register a freight:</h3>
         <form @submit.prevent="checkForm">
         <div class="form-group row mx-sm-3 mb-2">
             <label for="commodityGroup">Commodity group e.g. cameras, laptops</label>
@@ -33,7 +33,7 @@
             <label for="deliveryDate">Delivery date</label>
             <input type="date" class="form-control" placeholder="22.03.2020" v-model="packagingUnit.deliveryDate">
         </div>
-        <button type="submit" class="btn btn-secondary mx-sm-3 mb-2">Submit</button>
+        <button type="submit" class="btn btn-secondary sm-3 mb-2">Submit</button>
     </form>
         </div>
     </div>
@@ -59,9 +59,8 @@ export default {
 </script>
 <style scoped>
     .wrapper {
-    width: 30%;
-    margin-left: 30px;
-    padding-top: 50px;
-    display: block;
+    width: 300px;
+    padding-left: 20px;
+    padding-top: 40px;
 }
 </style>

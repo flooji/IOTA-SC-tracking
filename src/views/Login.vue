@@ -25,7 +25,7 @@
                 <div class="mt-3">Selected: <strong>{{ selected }}</strong></div>
             </div>
             <div class="form-row mt-3">
-                <div class="form-group mx-3">
+                <div class="form-group mx-1">
                 <label for="inputPassword" class="sr-only">Password</label>
                 <input type="password" class="form-control" id="inputPassword" v-model="password" placeholder="Password">
                 </div>
@@ -33,7 +33,7 @@
             </div>
       </form>
     <div class="output">{{msg}}</div>
-    <img alt="parcel" src="../assets/logo.png">      
+    <img alt="parcel" style="width:200px" src="../assets/logo.png">      
         </div>
     </div>
 </template>
@@ -69,9 +69,10 @@ export default {
 <style scoped>
 .background {
     background: rgb(81, 221, 165);
+    height: 100%
 }
 .wrapper {
-    width: 30%;
+    width: 300px;
     margin-left: 30px;
     padding-top: 50px;
     display: block;

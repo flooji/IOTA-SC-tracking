@@ -23,9 +23,9 @@ export default {
 </script>
 <style scoped>
 .wrapper {
-    width: 30%;
-    margin-left: 30px;
-    padding-top: 50px;
+    width: 300px;
+    padding-left: 20px;
+    padding-top: 40px;
     display: block;
 }
 </style>

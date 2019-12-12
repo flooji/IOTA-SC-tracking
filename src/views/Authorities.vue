@@ -27,4 +27,7 @@ export default {
     text-align: center;
     margin: auto;
 }
+.panel {
+    margin-top: 20px;
+}
 </style>

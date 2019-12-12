@@ -1,6 +1,7 @@
 <template>
     <div class="container">
-        <h1>Welcome, register a freight:</h1>
+        <div class="wrapper">
+            <h1>Welcome, register a freight:</h1>
         <form @submit.prevent="checkForm">
         <div class="form-group row mx-sm-3 mb-2">
             <label for="commodityGroup">Commodity group e.g. cameras, laptops</label>
@@ -34,6 +35,7 @@
         </div>
         <button type="submit" class="btn btn-secondary mx-sm-3 mb-2">Submit</button>
     </form>
+        </div>
     </div>
 </template>
 <script>
@@ -55,3 +57,11 @@ export default {
   }
 }
 </script>
+<style scoped>
+    .wrapper {
+    width: 30%;
+    margin-left: 30px;
+    padding-top: 50px;
+    display: block;
+}
+</style>

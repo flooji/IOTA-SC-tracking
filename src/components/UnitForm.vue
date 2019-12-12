@@ -13,13 +13,13 @@
             <input type="text" class="form-control" placeholder="399.95" v-model="packagingUnit.valueOfItem">
             <label for="currencyOfPrice">in</label>
             <select class="form-control" v-model="packagingUnit.currencyOfPrice">
-                <option v-bind:for="currency in currencies">{{ currency }}</option>
+                <option v-bind:v-for="(currency, index) in currencies" :key="index">{{ currency }}</option>
             </select>
         </div>
         <div class="form-group row mx-sm-3 mb-2">
             <label for="numberOfItems">Number of Items</label>
             <select class="form-control" id="numberOfItems">
-                <option v-bind:for="n in 500">{{ n }}</option>
+                <option v-bind:v-for="(index) in 500" :key="index">{{ index }}</option>
             </select>
         </div> -->
         <div class="form-group row mx-sm-3 mb-2">

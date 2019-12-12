@@ -4,12 +4,16 @@
 <script>
 export default {
   name: 'app',
-  // components: {    
-  // },
-  // data() {
-  //   return {
-  //   }
-  // },
+   components: {    
+   },
+  data() {
+    return {
+      map: null
+    }
+   },
+   mounted() {
+     this.map
+   }
 }
 </script>
 <style>

@@ -4,6 +4,7 @@ import Home from './views/Home.vue'
 import Producer from './views/Producer.vue'
 import Logistics from './views/Logistics.vue'
 import Authorities from './views/Authorities.vue'
+import Login from './views/Login.vue'
 
 Vue.use(Router)
 
@@ -12,7 +13,7 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/',
+      path: '/home',
       name: 'home',
       component: Home
     }, 
@@ -30,6 +31,11 @@ export default new Router({
       path: '/authorities',
       name: 'authorities',
       component: Authorities
+    },
+    {
+      path: '/',
+      name: 'login',
+      component: Login
     }
   ]
 })

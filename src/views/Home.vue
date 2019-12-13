@@ -2,7 +2,7 @@
     <div class="background">
         <div class="wrapper">
             <custom-nav></custom-nav>
-            <img alt="parcel" src="../assets/logo.png">
+            <img alt="parcel" style="width:300px" src="../assets/logo.png">
         </div>
     </div>
 </template>

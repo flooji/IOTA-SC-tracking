@@ -1,7 +1,7 @@
 <template>
     <div class="container">
+        <h3 class="mx-sm-3 mt-4">{{msg}}</h3>
         <div class="wrapper">
-            <h3>{{msg}}</h3>
             <form-packaging-unit></form-packaging-unit>
         </div>
     </div>
@@ -25,7 +25,7 @@ export default {
 .wrapper {
     width: 300px;
     padding-left: 20px;
-    padding-top: 40px;
+    padding-top: 10px;
     display: block;
 }
 </style>

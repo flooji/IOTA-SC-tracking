@@ -1,24 +1,18 @@
 <template>
     <div class="background">
         <div class="wrapper">
-            <ul class="nav nav-pills flex-column flex-sm-row">
-            <li class="nav-item">
-                <router-link class="nav-link" to="/producer">Producer</router-link>
-            </li>
-            <li class="nav-item">
-                <router-link class="nav-link" to="/logistics">Logistics</router-link>
-            </li>
-            <li class="nav-item">
-                <router-link class="nav-link" to="/authorities">Authorities</router-link>
-            </li>
-             </ul>
+            <custom-nav></custom-nav>
             <img alt="parcel" src="../assets/logo.png">
         </div>
     </div>
 </template>
 <script>
+import Nav from '../components/Nav.vue'
 export default {
-  name: 'home'
+  name: 'home',
+  components: {
+      'custom-nav': Nav
+  }
 }
 </script>
 <style scoped>
@@ -30,8 +24,5 @@ export default {
     margin-left: 30px;
     padding-top: 50px;
     display: block;
-}
-.nav {
-    background: white;
 }
 </style>

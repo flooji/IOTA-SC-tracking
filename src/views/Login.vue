@@ -3,7 +3,7 @@
         <div class="wrapper">
             <form action="#" method="post"  target="_self" @submit.prevent="checkForm"> 
             <div class="radios">
-                <h4>Please choose who you are</h4>
+                <h4>Please choose your role</h4>
                 <div class="form-check mx-sm-3 mb-2">
                 <input class="form-check-input" type="radio" name="exampleRadios" id="producer" v-model="selected" value="producer" checked>
                 <label class="form-check-label" for="producer">
@@ -22,7 +22,7 @@
                 Authorities
                 </label>
                 </div>
-                <div class="mt-3">Selected: <strong>{{ selected }}</strong></div>
+                <div class="mt-3">Password for: <strong>{{ selected }}</strong></div>
             </div>
             <div class="form-row mt-3">
                 <div class="form-group mx-1">

@@ -12,6 +12,7 @@
     "@iota/mam": "^0.7.3",
     "@tomtom-international/web-sdk-maps": "^5.41.0",
     "@tomtom-international/web-sdk-services": "^5.41.0",
+    "axios": "^0.19.0",
     "bootstrap": "^4.4.1",
     "bootstrap-vue": "^2.1.0",
     "core-js": "^3.4.3",

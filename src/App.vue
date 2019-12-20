@@ -19,8 +19,8 @@ export default {
     const password = process.env.VUE_APP_REMOTEIT_PASSWORD
     const device = process.env.VUE_APP_REMOTEIT_DEVICE_ADDRESS
 
-    let client = new RemoteitClient(developerkey,username,password,device)¨
-    //geht evtl nicht, da return Promise 
+    let client = new RemoteitClient(developerkey,username,password,device)
+    //geht evtl nicht, da return Promise, sonst mit .then
     if(establishConnection(client)){
       this.remoteit.connection = true
       this.remoteit.client = client

@@ -5,12 +5,13 @@ import Producer from './views/Producer.vue'
 import Logistics from './views/Logistics.vue'
 import Authorities from './views/Authorities.vue'
 import Login from './views/Login.vue'
+import NotFound from './views/404.vue'
 
 Vue.use(Router)
 
 export default new Router({
   mode: 'history',
-  base: process.env.BASE_URL,
+  //base: process.env.BASE_URL,
   routes: [
     {
       path: '/home',
@@ -36,6 +37,9 @@ export default new Router({
       path: '/',
       name: 'login',
       component: Login
+    },
+    { path: '*', 
+      component: NotFound
     }
   ]
 })

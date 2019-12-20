@@ -35,6 +35,7 @@
 </template>
 <script>
 export default {
+    name: 'UnitForm',
     data() {
         return {
             packagingUnit: {
@@ -50,7 +51,6 @@ export default {
     },
     methods: {
       checkForm() {
-            //socket.emit('packagingUnit', this.packagingUnit)
         }
     }
 }

@@ -42,26 +42,12 @@ class RemoteitClient {
   }
 }
 
+
 //let myClient = new RemoteitClient(developerkey,username,password,deviceaddress)
 
-function establishConnection(client) {
-    client.login()
-    .then(response => {
-      client.token = response.data.token
-      client.tokenExpiration = response.data.auth_expiration
-      return response.data.token
-    })
-    .then(token => {
-      return client.connect(token)
-    })
-    .then(response => {
-      client.proxy = response.data['connection']['proxy']
-      //console.log(client.proxy)
-      return response.data['connection']['proxy']
-    })
-    .catch(err => {
-      console.log(err)
-    })
-}
 
-export {establishConnection, RemoteitClient}
+
+export { RemoteitClient}
+
+
+

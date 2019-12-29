@@ -1,5 +1,5 @@
 <template>
-    <form @submit.prevent="checkForm">
+    <form @submit.prevent="$emit('create-order',packagingUnit)">
         <div class="form-group row mx-sm-3 mb-2">
             <label for="commodityGroup">Commodity group e.g. cameras, laptops</label>
             <input type="text" class="form-control" placeholder="Cameras" v-model="packagingUnit.commodityGroup">
@@ -18,7 +18,7 @@
         </div>
         <div class="form-group row mx-sm-3 mb-2">
             <label for="numberOfItems">Number of items</label>
-            <select class="form-control" id="numberOfItems">
+            <select class="form-control" v-model="packagingUnit.numberOfItems">
                 <option v-for="n in 500" :key="n.id">{{ n }}</option>
             </select>
         </div>
@@ -47,11 +47,6 @@ export default {
                 owner: null,
                 deliveryDate: null
             }
-        }
-    },
-    methods: {
-      checkForm() {
-          
         }
     }
 }

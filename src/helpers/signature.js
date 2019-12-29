@@ -6,6 +6,8 @@ exports.verifyJWT = (jsonWebToken, key) => {
         const decoded = jwt.verify(jsonWebToken,key,{algorithms: ['RS256']})
         return decoded
       } catch(err) {
+        // eslint-disable-next-line no-console
+        console.log(err)
         // err = {
         //     name: 'JsonWebTokenError',
         //     message: 'jwt malformed'

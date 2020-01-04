@@ -30,7 +30,8 @@ if(decodedToken) {
   //console.log('Hashed claim: ',hashFromRaspi)
 
   //Make sure to use the correct root/channelID for the fetch
-  const root = 'UHKZQXUIXPNGFQAQFPQDVI9RLUHPQMTXTMOURUCBGJADMVR9PPFTVFBKDYSPFJNMCQV9IKKA9JF9QYMNQ'
+  const root = 'DRDN9QR9DJCUJ9YHJ9YFXBDAQEEMWCKZQGDMNGIZZHSRJSVLRVVRABHGZGFVSLFHNOXYCGJJJXVGPMQJF'
+  //'UHKZQXUIXPNGFQAQFPQDVI9RLUHPQMTXTMOURUCBGJADMVR9PPFTVFBKDYSPFJNMCQV9IKKA9JF9QYMNQ'
 
   //Fetch one claim from tangle as promise and resolve
   return await Mam.fetchSingle(root, mode, null).then(data => {

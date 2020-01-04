@@ -51,7 +51,7 @@ export default {
 
         (async function() {
         const mode = 'restricted'
-        const sideKey = 'HELLOCANYOUHEARME'
+        const sideKey = 'GPSTRACKERSCCHAIN'
         const provider = "https://nodes.devnet.iota.org"
         const mamExplorerLink = `https://mam-explorer.firebaseapp.com/?provider=${encodeURIComponent(provider)}&mode=${mode}&root=`
         const outputHtml = document.querySelector("#output")
@@ -63,7 +63,7 @@ export default {
         mamState = Mam.changeMode(mamState, mode, sideKey)
 
         //Make sure to use the correct root/channelID for the fetch
-        const channelID = "YBGAAW9PMGUIFONOBOFQPGAZFOT9YLEXPJNTZWJQFIQYKXMASYSZCSVCKBZKLPJEIFGODUWYBPWLLTIVV"
+        const channelID = process.env.VUE_APP_GNSS_SEED
 
         let counter = 0
         //Callback to get a single coordinate
@@ -97,7 +97,7 @@ export default {
         
         const fetchData = async root => {
             outputHtml.innerHTML += 'Fetch data from the tangle. Please be patient...<br/>'
-            await Mam.fetch(root,mode,null,getCoordinate)
+            await Mam.fetch(root,mode,sideKey,getCoordinate)
             outputHtml.innerHTML += `Verify with MAM Explorer:<br/><a target="_blank" href="${mamExplorerLink}${root}">${mamExplorerLink}${root}</a>`
         }
         fetchData(channelID).catch(err => {console.log(err)}) 

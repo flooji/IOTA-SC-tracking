@@ -23,8 +23,9 @@
                 <p><b>Number of Items:</b> {{order.claim.data['numberOfItems']}}</p>
                 <p><b>Price of Item:</b> {{order.claim.data['valueOfItem']}} {{order.claim.data['currencyOfPrice']}}</p>
                 <p><b>Owner:</b> {{order.claim.data['owner']}}</p>
-                <p><b>Root Credential Packaging Unit:</b> {{order.root}}</p>
                 <p><b>Tracking Root:</b> {{order.claim.trackingRoot}}</p>
+                <p><b>-----------------------------------------------</b></p>
+                <p><b>Root Credential Packaging Unit:</b> {{order.root}}</p>
                 <p><b>Check on tangle:</b> {{link}}</p>
             </div>
         </section>
@@ -128,13 +129,13 @@ export default {
             let trackingRoot = response['data'].root
             let link = response['data'].link
             // eslint-disable-next-line no-console
-            console.log(link)
+           console.log(link)
             createPackagingUnit(formData, trackingRoot)
             .then(result => {
                 // eslint-disable-next-line no-console
                 console.log(result)
                 this.order = result
-                this.link = link
+                //this.link = link
                 this.status = 'made-order'
                 this.msg = `Congrats you made an order!`
             // eslint-disable-next-line no-console

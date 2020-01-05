@@ -1,5 +1,7 @@
 # IOTA-SC-tracking
-This app illustrates how to track packaging units in logistics with IOTA. 
+Identity of Things (IDoT), the identity management for things, is, considering the fast-growing number of connected devices, an important research topic. An enabling technology for IDoT are Distributed Ledgers: Using Distributed Ledgers should foster the independence of a subject (Self Sovereign Identity – SSI) and thus address data security, data privacy and manipulation possibilities. 
+
+This app illustrates the concept of a IOTA-based tracking system in the supply chain. 
 
 Visit the app on https://iota-tracking-system.firebaseapp.com.
 
@@ -77,7 +79,8 @@ Please [open an issue](https://github.com/flooji/IOTA-Raspberry-API/issues/new) 
 
 ## Contributing
 
-If you are interesting in pushing this idea further I would be more than happy to collaborate with you. :blush:
+If you are interested in pushing this idea further, go for it! :blush:
+
 Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/flooji/IOTA-Raspberry-API/compare/).
 
 ## Credits

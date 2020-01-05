@@ -59,10 +59,10 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 **Installation**
 
-You can download this repo to run ```npm install``` to install all dependencies automatically. 
+You can download this repo and run ```npm install``` to install all dependencies automatically. 
 All dependencies are visible in the package.json file.
 
-Add a .env file with the following content: 
+Add a [.env file](https://stackabuse.com/managing-environment-variables-in-node-js-with-dotenv/) with the following content: 
 ```
 VUE_APP_REMOTEIT_DEVELOPER_KEY=[your remoteit developer key]
 VUE_APP_REMOTEIT_USERNAME=[your remoteit username]

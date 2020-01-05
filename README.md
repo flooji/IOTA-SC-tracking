@@ -1,6 +1,7 @@
 # IOTA-SC-tracking
 Identity of Things (IDoT), the identity management for things, is, considering the fast-growing number of connected devices, an important research topic. An enabling technology for IDoT are Distributed Ledgers: Using Distributed Ledgers should foster the independence of a subject (Self Sovereign Identity – SSI) and thus address data security, data privacy and manipulation possibilities. 
 
+In the supply chain identifying and tracking subjects helps to make processes more traceable and effective.
 This app illustrates the concept of a IOTA-based tracking system in the supply chain. 
 
 Visit the app on https://iota-tracking-system.firebaseapp.com.

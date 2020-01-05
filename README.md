@@ -2,12 +2,14 @@
 Identity of Things (IDoT), the identity management for things, is, considering the fast-growing number of connected devices, an important research topic. An enabling technology for IDoT are Distributed Ledgers: Using Distributed Ledgers should foster the independence of a subject (Self Sovereign Identity – SSI) and thus address data security, data privacy and manipulation possibilities. 
 
 In the supply chain identifying and tracking subjects helps to make processes more traceable and effective.
-This app illustrates the concept of a IOTA-based tracking system in the supply chain. 
+This application illustrates the concept of a IOTA-based tracking system. 
+Visit my other repository IOTA-Raspberry-API to see the second part of the implementation. 
 
-Visit the app on https://iota-tracking-system.firebaseapp.com.
+**Architecture**
+
+![architecture](https://github.com/flooji/IOTA-SC-tracking/blob/master/architecture.png)
 
 The following functions could be part of the tracking system:
-
 - Authenticate a tracking device :heavy_check_mark:
 - Register a packaging unit in order to track it :heavy_check_mark: 
 - Register a freight containing multiple packaging units
@@ -52,7 +54,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 **Prerequisites**
 
 - [NodeJS](https://nodejs.org/en/) installed
-- Developer account on [remote.it](https://remote.it/) to connect this app to your Raspberry Pi.
+- Developer account on [remote.it](https://remote.it/) to connect this app to your Raspberry Pi
+- [Firebase hosting](https://firebase.google.com/docs/hosting/quickstart) to host your app
 
 **Installation**
 

@@ -10,12 +10,13 @@ import tt from '@tomtom-international/web-sdk-maps'
 import Mam from '@iota/mam'
 import {trytesToAscii, asciiToTrytes} from '@iota/converter'
         
+const apiKey = process.env.VUE_APP_TOM_TOM_KEY
 export default {
     methods: {
     },
     mounted() {
         this.map = tt.map({
-            key: 'c4JgmgRrdIpiEN2jbDCrDkHMRV0yfH73',
+            key: apiKey,
             container: 'map',
             style: 'tomtom://vector/1/basic-main',
             zoom: 7,

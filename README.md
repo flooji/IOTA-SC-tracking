@@ -56,6 +56,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - [NodeJS](https://nodejs.org/en/) installed
 - Developer account on [remote.it](https://remote.it/) to connect this app to your Raspberry Pi
 - [Firebase hosting](https://firebase.google.com/docs/hosting/quickstart) to host your app
+- [TomTom API key](https://developer.tomtom.com/)
 
 **Installation**
 
@@ -72,6 +73,7 @@ VUE_APP_PUBLIC_KEY_DEVICE=[a public key to check the JSON Web token of your iot 
 VUE_APP_SEED=[IOTA seed to register a packaging unit] 
 VUE_APP_SIDE_KEY=[IOTA side key to register a packaging unit]
 VUE_APP_GNSS_SEED=[IOTA seed to fetch the tracking data]
+VUE_APP_TOM_TOM_KEY=[your tomtom API key]
 ``` 
 The remote.it device address is the service ID of your device visible in your remote.it account.
 
